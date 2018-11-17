@@ -1,0 +1,21 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adfv2grgithub"
+		},
+		"AzureBlobStorage1_connectionString": {
+			"value": ""
+		},
+		"AzureBlobTarget_properties_typeProperties_fileName": {
+			"value": "shapoint.json"
+		},
+		"AzureBlobTarget_properties_typeProperties_folderPath": {
+			"value": "log-errors"
+		},
+		"HttpServer1_properties_typeProperties_url": {
+			"value": "https://<sitename>/sharepoint.com/_vti_bin/ListData.svc"
+		}
+	}
+}
