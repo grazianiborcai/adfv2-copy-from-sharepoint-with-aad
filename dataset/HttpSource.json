@@ -1,0 +1,23 @@
+{
+	"name": "HttpSource",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "HttpServer1",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"access_token": {
+				"type": "SecureString"
+			}
+		},
+		"type": "HttpFile",
+		"typeProperties": {
+			"requestMethod": "Get",
+			"additionalHeaders": {
+				"value": "Accept:application/json;odata=verbose\nAuthorization:Bearer @{dataset().access_token}",
+				"type": "Expression"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

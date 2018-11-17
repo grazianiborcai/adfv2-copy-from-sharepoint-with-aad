@@ -1,0 +1,15 @@
+{
+	"name": "AzureBlobTarget",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"type": "AzureBlob",
+		"typeProperties": {
+			"fileName": "shapoint.json",
+			"folderPath": "log-errors"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

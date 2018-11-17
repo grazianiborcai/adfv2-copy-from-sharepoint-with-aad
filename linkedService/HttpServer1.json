@@ -1,0 +1,12 @@
+{
+	"name": "HttpServer1",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"type": "HttpServer",
+		"typeProperties": {
+			"url": "https://<sitename>/sharepoint.com/_vti_bin/ListData.svc",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Anonymous"
+		}
+	}
+}
